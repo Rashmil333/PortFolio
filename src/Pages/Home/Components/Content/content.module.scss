@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.contentWrapper {
+    background-image: url('../../../../static/flowerFavicon.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    .canvas_heading {
+        position: absolute;
+        z-index: 1000;
+        font-size: calc(18vmin + 8 * (100vw - 400px) / 400);
+        word-spacing: 1px;
+        letter-spacing: -13px;
+        font-weight: 600;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        margin: 0;
+        font-family: 'Nanum Gothic', sans-serif;
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+%regularText {
+    font-size: 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
+%lp-8 {
+    letter-spacing: -0.8px;
+}
+%bold-600 {
+    font-weight: 600;
+}
+%bold-800 {
+    font-weight: 800;
+}
+%textSize26 {
+    @extend %lp-8;
+    font-size: 1.625rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
