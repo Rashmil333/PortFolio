@@ -1,20 +1,16 @@
 import React from 'react';
-import { BannerLogo } from '../../../../constant';
+import BannerLogoComponent from './BannerLogo/BannerLogo';
 import styles from './header.module.scss'
+import RightLinks from './RightLinks/RightLinks';
 
 const Header = () => {
     return (
         <div className={styles.headerContainer}>
             <div className={styles.leftSection}>
-                <img src={BannerLogo} className={styles.logo} />
+                <BannerLogoComponent />
                 <p className={styles.header}>RASHMIL RAJPOOT</p>
             </div>
-
-            <div className={styles.rightSection}>
-                <p className={styles.link}>EDUCATION</p>
-                <p className={styles.link}>SKILLS</p>
-                <p className={styles.link}>PROJECTS</p>
-            </div>
+            <RightLinks />
         </div>
     )
 }

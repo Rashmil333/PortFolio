@@ -1,16 +1,10 @@
-import { useRef, useState, useEffect } from 'react'
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { useRef, } from 'react'
+import { useFrame, useLoader, } from '@react-three/fiber';
 import * as THREE from "three";
 import {
-    // Html,
     MeshDistortMaterial,
-    MeshWobbleMaterial,
-    OrbitControls,
-    // Sphere
 } from "@react-three/drei";
-import { Suspense } from 'react';
 import { useSpring, a } from '@react-spring/three';
-import { useCallback } from 'react';
 
 const WhiteBloodCell = ({ texture, position, hovered, index }) => {
     const base = useLoader(THREE.TextureLoader, texture);

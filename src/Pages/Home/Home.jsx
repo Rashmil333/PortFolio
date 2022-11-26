@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from './Components/AboutMe/AboutMe'
 import Content from './Components/Content/Content'
+import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Header />
             <Content />
             <AboutMe />
+            <Footer />
         </>
     )
 }

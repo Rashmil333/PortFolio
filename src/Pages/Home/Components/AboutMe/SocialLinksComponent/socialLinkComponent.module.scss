@@ -1,0 +1,18 @@
+@import '../../../../../variable.scss';
+.socialLinks {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1.3125rem;
+    margin: 3.125rem .9375rem 0 0;
+    &.footer {
+        justify-content: center;
+    }
+    .link {
+        cursor: pointer;
+    }
+    .detail {
+        @extend %regularText;
+        position: absolute;
+        right: 12rem;
+    }
+}

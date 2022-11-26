@@ -1,17 +1,5 @@
-import { useRef, useState, useEffect } from 'react'
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
-import * as THREE from "three";
-import {
-    // Html,
-    MeshDistortMaterial,
-    MeshWobbleMaterial,
-    OrbitControls,
-    // Sphere
-} from "@react-three/drei";
-import { Suspense } from 'react';
-import { useSpring, a } from '@react-spring/three';
-import { useCallback } from 'react';
-
+import { useRef, useState } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber';
 import styles from './content.module.scss';
 import WhiteBloodCell from '../WhiteBloodCell/WhiteBloodCell';
 
