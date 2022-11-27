@@ -1,0 +1,45 @@
+@import '../../../variable.scss';
+.skillmapper {
+    font-family: $font-gothic;
+    .skillSection {
+        margin-top: 1.25rem;
+        border-bottom: 1px solid grey;
+        padding-bottom: 1.875rem;
+        position: relative;
+        .title {
+            font-size: 1.75rem;
+            margin: 0;
+            font-weight: 600;
+
+        }
+        .description {
+            margin: 0;
+            line-height: 2.5rem;
+        }
+        .level {
+            margin: 0;
+            line-height: 2.5rem;
+            width: fit-content;
+            >span {
+                border: 1px solid green;
+                padding: .25rem 1.25rem;
+                font-size: .8125rem;
+                text-transform: uppercase;
+            }
+        }
+        .githubBtn {
+            outline: none;
+            border: none;
+            background: #B70259;
+            border-radius: 20px;
+            color: white;
+            border-radius: .625rem;
+            padding: .625rem .9375rem;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0;
+            bottom: -1.0625rem;
+            cursor: pointer;
+        }
+    }
+}

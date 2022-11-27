@@ -4,13 +4,14 @@ import githubIcon from './static/githubIcon.svg';
 import gmailIcon from './static/gmailIcon.svg';
 import telePhoneIcon from './static/telephoneIcon.svg';
 import copyIcon from './static/copyIcon.svg';
+import GoGreenCover from './static/go-greenImage.PNG';
 
 
 export {
     BannerLogo,
     BG,
     gmailIcon,
-    githubIcon, telePhoneIcon, copyIcon
+    githubIcon, telePhoneIcon, copyIcon, GoGreenCover
 };
 
 export const Links = [
@@ -88,4 +89,62 @@ export const EDUCATIONARRAY = [
         title: '10th',
         description: '88%'
     },
+]
+
+export const SKILLSARRAY = [
+    {
+        title: 'NextJS',
+        description: 'Last worked recently',
+        level: 'Intermediate'
+    },
+    {
+        title: 'React JS',
+        description: 'Last worked Daily',
+        level: 'More Than Intermediate'
+    },
+    {
+        title: 'SCSS',
+        description: 'Last worked Daily',
+        level: 'Intermediate'
+    },
+    {
+        title: 'Graphql',
+        description: 'Last worked recently in Xcelpros',
+        level: 'Beginner'
+    },
+    {
+        title: 'Typescript',
+        description: 'Last worked recently in Xcelpros',
+        level: 'Intermediate'
+    },
+    {
+        title: 'Web Sockets',
+        description: 'Last worked recently in Xcelpros and in MERN Project.',
+        level: 'More than beginner'
+    },
+    {
+        title: 'Node Js',
+        description: 'Last worked in nov 2021 for backend using express.',
+        level: 'Beginner'
+    },
+    {
+        title: 'Python',
+        description: 'Last worked in nov 2021',
+        level: 'Beginner'
+    },
+    {
+        title: 'HTML',
+        description: 'Last worked daily',
+        level: 'No -level'
+    },
+    {
+        title: 'CSS',
+        description: 'Last worked daily',
+        level: 'Intermediate'
+    },
+    {
+        title: 'JS',
+        description: 'Last worked daily',
+        level: 'Intermediate'
+    }
 ]
