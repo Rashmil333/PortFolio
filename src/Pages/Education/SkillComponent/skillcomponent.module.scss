@@ -33,13 +33,22 @@
             background: #B70259;
             border-radius: 20px;
             color: white;
-            border-radius: .625rem;
+            border-radius: 1.5625rem;
             padding: .625rem .9375rem;
             text-transform: uppercase;
             position: absolute;
             right: 0;
             bottom: -1.0625rem;
             cursor: pointer;
+            transition: 0.1s;
+            &:hover {
+                transition: 0.1s;
+                right: -0.3125rem;
+            }
+            .arrow {
+                // width: 10px;
+                // height: 10px;
+            }
         }
     }
 }

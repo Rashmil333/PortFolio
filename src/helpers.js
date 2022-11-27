@@ -17,3 +17,7 @@ export function linkOnClickHandler(link) {
         copyTextToClipboard(link.value);
     }
 }
+
+export function openNewWindow(url) {
+    window.open(url, '_blank');
+}

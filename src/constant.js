@@ -5,13 +5,14 @@ import gmailIcon from './static/gmailIcon.svg';
 import telePhoneIcon from './static/telephoneIcon.svg';
 import copyIcon from './static/copyIcon.svg';
 import GoGreenCover from './static/go-greenImage.PNG';
+import rightarrowIcon from './static/right-arrow1.svg';
 
 
 export {
     BannerLogo,
     BG,
     gmailIcon,
-    githubIcon, telePhoneIcon, copyIcon, GoGreenCover
+    githubIcon, telePhoneIcon, copyIcon, GoGreenCover, rightarrowIcon
 };
 
 export const Links = [

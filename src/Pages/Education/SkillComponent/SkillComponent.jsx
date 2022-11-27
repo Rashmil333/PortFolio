@@ -1,6 +1,8 @@
 import React from 'react'
-import { SKILLSARRAY } from '../../../constant';
+import { rightarrowIcon, SKILLSARRAY } from '../../../constant';
+import { openNewWindow } from '../../../helpers';
 import styles from './skillcomponent.module.scss';
+import Image from '../../../Components/Image';
 
 export const SkillComponent = () => {
     return (
@@ -13,7 +15,10 @@ export const SkillComponent = () => {
                         <div className={styles.level}>
                             <span>   {skill.level}</span>
                         </div>
-                        <button className={styles.githubBtn}>See github --></button>
+                        <button className={styles.githubBtn} onClick={() => openNewWindow('https://github.com/Rashmil333?tab=repositories')}>
+                            See github
+                            <Image src={rightarrowIcon} className={styles.arrow} />
+                        </button>
                     </div>
                 )
             })}
