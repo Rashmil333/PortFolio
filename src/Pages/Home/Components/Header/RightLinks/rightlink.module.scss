@@ -1,11 +1,14 @@
+@import '../../../../../variable.scss';
 .rightSection {
     display: flex;
     column-gap: 20px;
     justify-content: center;
+
     .link {
         font-size: 1rem;
         font-weight: 600;
         letter-spacing: -0.0313rem;
         cursor: pointer;
+        margin: 0;
     }
 }
