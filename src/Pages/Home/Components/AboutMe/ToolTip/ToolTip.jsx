@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import Image from '../../../../../Components/Image'
-import { copyIcon } from '../../../../../constant'
 import styles from './toolTip.module.scss';
 
 const ToolTip = (props) => {
-    const { icon, value, index } = props;
+    const { icon, value } = props;
     const [hovered, setHovered] = useState(false);
     return (
         <>

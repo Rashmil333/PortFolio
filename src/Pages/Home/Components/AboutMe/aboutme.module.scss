@@ -6,8 +6,10 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     .aboutMeContent {
-        margin: 100px 0 0 4rem;
-        position: absolute;
+        padding: 6.25rem 0 0 2rem;
+        @media screen and (max-width:480px) {
+            padding:3rem  1rem;
+        }
         .aboutText {
             @extend %textSize26;
             @extend %bold-600;
@@ -19,11 +21,13 @@
             max-width: 38.125rem;
             border-left: 1px solid green;
             .description {
-                display: flex;
+                // display: flex;
                 .profileImage {
                     width: 8.1875rem;
                     height: 8.1875rem;
                     border-radius: 50%;
+                    margin-right: 1.125rem;
+                    float: left;
                 }
                 .descriptiontext {
                     margin: .375rem 0 0 1.4375rem;
