@@ -2,9 +2,12 @@
 .dashboardContent {
     min-height: 30rem;
     padding-left: 3rem;
+    padding-right: 10rem;
+    margin-bottom: 10rem;
     .leftSection {
         max-width: 5.125rem;
-        margin-top: 7.125rem;
+        margin-top: 5.125rem;
+        position: absolute;
         .category {
             @extend %largeboldText;
             transform: rotateZ(90deg);

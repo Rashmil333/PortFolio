@@ -45,3 +45,47 @@ export const VARIANTS = {
     HEADER: 'header',
     FOOTER: 'footer'
 }
+
+
+export const EDUCATIONARRAY = [
+    {
+        title: 'Currently learning',
+        description: 'Python DSA, Nest'
+    },
+    {
+        title: 'Xcelpros Technologies private Limited(during grad)',
+        description: 'Full time Engaged on NextJs, typescript, scss,graphql'
+    },
+    {
+        title: 'B-TECH IT',
+        description: 'aggregate 74%'
+    },
+    {
+        title: 'Internship on React',
+        description: 'In Oye labs'
+    },
+    {
+        title: 'Internship on React',
+        description: 'In Triluxo Technologies private limited.'
+    },
+    {
+        title: 'Mern Stack (DEPRESSOR)',
+        description: 'A type of social networking website.'
+    },
+    {
+        title: 'Python',
+        description: 'Achieved 4.2 stars on hackkerank till nov 2021'
+    },
+    {
+        title: 'Coursera courses on python',
+        description: 'Around 4 certificates related to python basics,algos,some data structures'
+    },
+    {
+        title: '12th Education(Science)',
+        description: '76%'
+    },
+    {
+        title: '10th',
+        description: '88%'
+    },
+]

@@ -1,0 +1,42 @@
+@import '../../variable.scss';
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .educationRightSection {
+        // float: right;
+        display: grid;
+        justify-content: flex-end;
+        margin-top: 5rem;
+        .caption {
+            @extend %captionText;
+            margin-bottom: 1.25rem;
+        }
+        .education {
+            display: grid;
+            margin-bottom: 1.25rem;
+            row-gap: .4375rem;
+            position: relative;
+            padding-left: 1.125rem;
+            .course {
+                @extend %regularText;
+            }
+            .description {
+                @extend %smallText;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: .5rem;
+                height: .5rem;
+                background-color: black;
+                border-radius: 50%;
+                left: -0.25rem;
+                top: .375rem;
+            }
+        }
+        .educationMapper {
+            border-left: 1px solid black;
+            // padding-left: 1.125rem;
+        }
+    }
+}
