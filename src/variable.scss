@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-$breakpoint-1438:1438px;
-$breakpoint-ms:480px;
+$breakpoint-1438: 1438px;
+$breakpoint-ms: 480px;
 %regularText {
     font-size: 1rem;
     font-family: 'Nanum Gothic', sans-serif;
     margin: 0;
+}
+%largeboldText {
+    font-size: 3.125rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+    font-weight: 600;
 }
 %lp-8 {
     letter-spacing: -0.8px;

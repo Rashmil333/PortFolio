@@ -1,0 +1,16 @@
+@import '../../variable.scss';
+.dashboardContent {
+    min-height: 30rem;
+    padding-left: 3rem;
+    .leftSection {
+        max-width: 5.125rem;
+        margin-top: 7.125rem;
+        .category {
+            @extend %largeboldText;
+            transform: rotateZ(90deg);
+            @media screen and (max-width:480px) {
+                display: none;
+            }
+        }
+    }
+}

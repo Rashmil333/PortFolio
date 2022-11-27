@@ -24,10 +24,21 @@ export const Description = "Rashmil Rajpoot is a software developer mostly engag
 
 export const Paths = {
     HOME: '/',
+    EDUCATION: '/education',
+    SKILLS: '/skills',
+    PROJECTS: '/projects'
 };
 
+export const CATEGORIES = {
+    EDUCATION: 'EDUCATION',
+    SKILLS: 'SKILLS',
+    PROJECTS: 'PROJECTS'
+}
+
 export const MainLinks = [
-    { title: 'EDUCATION' }, { title: 'SKILLS' }, { title: 'PROJECTS' },
+    { title: CATEGORIES.EDUCATION, path: Paths.EDUCATION },
+    { title: CATEGORIES.SKILLS, path: Paths.SKILLS },
+    { title: CATEGORIES.PROJECTS, path: Paths.PROJECTS },
 ]
 
 export const VARIANTS = {
