@@ -8,6 +8,7 @@
     align-items: center;
     @media screen and (max-width:$breakpoint-ms) {
         display: grid;
+        box-shadow: 0 -6px 10px 0 #000;
     }
     .leftSection {
         display: flex;

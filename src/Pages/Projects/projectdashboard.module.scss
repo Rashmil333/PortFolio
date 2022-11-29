@@ -1,0 +1,60 @@
+@import '../../variable.scss';
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width:1200px) {
+        column-gap: 5.9375rem;
+        grid-template-columns: 1fr 0.5fr;
+    }
+    @media screen and (max-width:1019px) {
+        grid-template-columns: auto;
+    }
+    .educationRightSection {
+        justify-content: flex-end;
+        margin-top: 5rem;
+        @media screen and (max-width:1200px) {
+            max-width: 25rem;
+        }
+        .eduContent {
+            float: right;
+            .caption {
+                @extend %captionText;
+                margin-bottom: 1.25rem;
+            }
+            .education {
+                display: grid;
+                margin-bottom: 1.25rem;
+                row-gap: .4375rem;
+                position: relative;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #9F9A9A;
+                .course {
+                    @extend %regularText;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 1.25rem
+                }
+                .description {
+                    @extend %smallText;
+                    max-width: 23.875rem;
+                }
+
+            }
+            .educationMapper {}
+        }
+
+    }
+    .middleSection {
+        text-align: -webkit-right;
+        padding-top: 5.3125rem;
+        .coverContent {
+            max-width: 25rem;
+            text-align: initial;
+            .coverHeading {
+                @extend %captionText;
+                margin-bottom: 1.25rem;
+            }
+        }
+
+    }
+}

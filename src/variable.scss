@@ -6,11 +6,13 @@ $font-gothic: 'Nanum Gothic', sans-serif;
     font-size: 1rem;
     font-family: 'Nanum Gothic', sans-serif;
     margin: 0;
+    width: fit-content;
 }
 %smallText {
     font-size: .875rem;
     font-family: 'Nanum Gothic', sans-serif;
     margin: 0;
+    width: fit-content;
 }
 %largeboldText {
     font-size: 3.125rem;

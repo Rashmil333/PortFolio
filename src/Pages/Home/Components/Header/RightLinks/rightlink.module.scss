@@ -10,5 +10,8 @@
         letter-spacing: -0.0313rem;
         cursor: pointer;
         margin: 0;
+        &.active {
+            color: gray;
+        }
     }
 }

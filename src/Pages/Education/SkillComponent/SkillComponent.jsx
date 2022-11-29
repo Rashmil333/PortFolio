@@ -1,5 +1,5 @@
 import React from 'react'
-import { rightarrowIcon, SKILLSARRAY } from '../../../constant';
+import { rightarrowIconLatest, SKILLSARRAY, STATICLINKS } from '../../../constant';
 import { openNewWindow } from '../../../helpers';
 import styles from './skillcomponent.module.scss';
 import Image from '../../../Components/Image';
@@ -15,9 +15,9 @@ export const SkillComponent = () => {
                         <div className={styles.level}>
                             <span>   {skill.level}</span>
                         </div>
-                        <button className={styles.githubBtn} onClick={() => openNewWindow('https://github.com/Rashmil333?tab=repositories')}>
+                        <button className={styles.githubBtn} onClick={() => openNewWindow(STATICLINKS.github)}>
                             See github
-                            <Image src={rightarrowIcon} className={styles.arrow} />
+                            <Image src={rightarrowIconLatest} className={styles.arrow} />
                         </button>
                     </div>
                 )

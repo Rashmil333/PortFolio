@@ -41,13 +41,14 @@
             bottom: -1.0625rem;
             cursor: pointer;
             transition: 0.1s;
+            font-weight: 900;
+            font-size: .75rem;
             &:hover {
                 transition: 0.1s;
                 right: -0.3125rem;
             }
             .arrow {
-                // width: 10px;
-                // height: 10px;
+                margin: 0 0 .0625rem .4375rem;
             }
         }
     }

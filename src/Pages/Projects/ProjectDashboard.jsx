@@ -1,33 +1,27 @@
 import React from 'react'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import Image from '../../Components/Image';
-import { CATEGORIES, EDUCATIONARRAY, GoGreenCover, STATICLINKS } from '../../constant'
+import { CATEGORIES, EDUCATIONARRAY, GIHUBARRAY, GoGreenCover, STATICLINKS } from '../../constant'
 import { openNewWindow } from '../../helpers';
-import styles from './educationdashboard.module.scss';
-import { SkillComponent } from './SkillComponent/SkillComponent';
-const EducationDashboard = () => {
+import styles from './projectdashboard.module.scss';
+import { SkillComponent } from '../Education/SkillComponent/SkillComponent';
+import ProjectCard from './ProjectCard/ProjectCard';
+const ProjectDashboard = () => {
     return (
-        <Dashboard category={CATEGORIES.EDUCATION}>
+        <Dashboard category={CATEGORIES.PROJECTS}>
             <div className={styles.mainContent}>
                 <div className={styles.middleSection}>
                     <div className={styles.coverContent}>
-                        <div className={styles.coverTopSection} onClick={() => openNewWindow(STATICLINKS.coverlink)}>
-                            <Image src={GoGreenCover} className={styles.cover} />
-                            <p className={styles.coverhint}>Recently made this.</p>
-                            <p className={styles.coverTitle}>Steps flow with model parallely</p>
-                        </div>
-
-
-                        <p className={styles.heading}>SKILLS</p>
-                        <SkillComponent />
+                        <p className={styles.coverHeading}>CODEPENS</p>
+                        <ProjectCard />
                     </div>
 
                 </div>
                 <div className={styles.educationRightSection}>
                     <div className={styles.eduContent}>
-                        <p className={styles.caption}>FORMAL {CATEGORIES.EDUCATION}</p>
+                        <p className={styles.caption}>GITHUB</p>
                         <div className={styles.educationMapper}>
-                            {EDUCATIONARRAY.map((item, index) => {
+                            {GIHUBARRAY.map((item, index) => {
                                 return (
                                     <div className={styles.education} key={index}>
                                         <p className={styles.course}>{item.title}</p>
@@ -43,4 +37,4 @@ const EducationDashboard = () => {
     )
 }
 
-export default EducationDashboard
+export default ProjectDashboard
