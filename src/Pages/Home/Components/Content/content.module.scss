@@ -12,6 +12,7 @@
     }
     .canvas_heading {
         position: absolute;
+        text-align: center;
         z-index: 1000;
         font-size: calc(18vmin + 8 * (100vw - 400px) / 400);
         word-spacing: 1px;
