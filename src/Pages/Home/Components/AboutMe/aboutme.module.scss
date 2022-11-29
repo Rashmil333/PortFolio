@@ -21,7 +21,6 @@
             max-width: 38.125rem;
             border-left: 1px solid green;
             .description {
-                // display: flex;
                 .profileImage {
                     width: 8.1875rem;
                     height: 8.1875rem;
@@ -52,8 +51,6 @@
 }
 .boxCanvas {
     position: absolute;
-    // right: 10%;
     width: 100%;
     height: 100%;
-    // z-index: -1;
 }
