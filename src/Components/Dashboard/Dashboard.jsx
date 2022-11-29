@@ -1,4 +1,3 @@
-import React from 'react'
 import Footer from '../../Pages/Home/Components/Footer/Footer';
 import Header from '../../Pages/Home/Components/Header/Header';
 import styles from './dashboard.module.scss';

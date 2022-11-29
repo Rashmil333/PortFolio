@@ -1,4 +1,3 @@
-import React from 'react'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import { CATEGORIES, GIHUBARRAY, githubIcon, STATICLINKS } from '../../constant'
 import styles from './projectdashboard.module.scss';

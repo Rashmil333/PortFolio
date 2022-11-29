@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Image = (props) => {
     const { src, className, alt = 'placeholder', onPointerOver, onPointerOut, onClick } = props;
     return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { rightarrowIconLatest, SKILLSARRAY, STATICLINKS } from '../../../constant';
 import { openNewWindow } from '../../../helpers';
 import styles from './skillcomponent.module.scss';

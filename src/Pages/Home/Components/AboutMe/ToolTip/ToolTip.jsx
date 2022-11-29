@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
-import Image from '../../../../../Components/Image'
 import styles from './toolTip.module.scss';
 
 const ToolTip = (props) => {
-    const { icon, value } = props;
-    const [hovered, setHovered] = useState(false);
+    const { text, id } = props;
     return (
-        <>
-            {hovered && (<p>{value}</p>)}
-            <Image src={icon} className={styles.link} onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)} />
-        </>
+        <button className={`${styles.tooltip} ${id === 1 ? styles.one : id === 2 ? styles.two : null}`}>
+            {text}
+        </button>
     )
 }
 

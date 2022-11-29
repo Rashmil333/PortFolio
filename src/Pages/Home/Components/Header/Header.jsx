@@ -1,4 +1,3 @@
-import React from 'react';
 import BannerLogoComponent from './BannerLogo/BannerLogo';
 import styles from './header.module.scss'
 import RightLinks from './RightLinks/RightLinks';

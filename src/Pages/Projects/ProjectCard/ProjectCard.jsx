@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from '../../../Components/Image';
 import { CODEPENARRAY } from '../../../constant';
 import styles from './projectcard.module.scss';

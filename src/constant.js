@@ -19,6 +19,7 @@ import loaderCover from './static/loader.png';
 import cardThreeCover from './static/cardthree.png';
 import babyWritingCover from './static/babyWriting.png';
 import rightArrowRed from './static/rightArrowred.svg';
+import { CallSVG, GithubSvg, Mailsvg } from './SVG/LinksIcons';
 
 export {
     BannerLogo,
@@ -29,9 +30,9 @@ export {
 };
 
 export const Links = [
-    { icon: telePhoneIcon, value: '8859472687' },
-    { icon: gmailIcon, value: 'rashmilrajpoot333@gmail.com' },
-    { icon: githubIcon, value: 'https://github.com/Rashmil333?tab=repositories', target: 'github' },
+    { activeIcon: telePhoneIcon, value: '+91 8859472687', icon: <CallSVG /> },
+    { activeIcon: gmailIcon, value: 'rashmilrajpoot333@gmail.com', icon: <Mailsvg /> },
+    { activeIcon: githubIcon, value: 'https://github.com/Rashmil333?tab=repositories', icon: <GithubSvg />, target: 'github' },
 ]
 
 

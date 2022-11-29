@@ -1,4 +1,3 @@
-import React from 'react'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import Image from '../../Components/Image';
 import { CATEGORIES, EDUCATIONARRAY, GoGreenCover, STATICLINKS } from '../../constant'
