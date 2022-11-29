@@ -1,0 +1,21 @@
+@import '../../../variable.scss';
+.projectCard {
+    font-family: $font-gothic;
+    margin-bottom: 8rem;
+    .title {
+        font-size: 1.625rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .desciption {
+        font-size: 1rem;
+        margin: .3125rem 0 0 0;
+        line-height: 1.1875rem;
+    }
+    .cardCover {
+        width: 100%;
+        height: 100%;
+        margin-top: 1.25rem;
+    }
+
+}

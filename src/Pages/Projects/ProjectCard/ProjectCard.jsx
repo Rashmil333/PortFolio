@@ -1,11 +1,24 @@
 import React from 'react'
+import Image from '../../../Components/Image';
+import { CODEPENARRAY } from '../../../constant';
+import styles from './projectcard.module.scss';
+import Seemorebtn from './SeeMoreButton/Seemorebtn';
 
 const ProjectCard = (props) => {
-    const { data } = props;
     return (
-        <div>
+        <>
+            {CODEPENARRAY.map((card, index) => {
+                return (
+                    <div className={styles.projectCard}>
+                        <p className={styles.title}>{card.title}</p>
+                        <p className={styles.desciption}>{card.description}</p>
+                        <Seemorebtn target={card.link} />
+                        <Image src={card.img} className={styles.cardCover} />
+                    </div>
+                )
+            })}
+        </>
 
-        </div>
 
     )
 }

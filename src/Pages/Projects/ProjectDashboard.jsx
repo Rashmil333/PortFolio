@@ -1,18 +1,24 @@
 import React from 'react'
 import Dashboard from '../../Components/Dashboard/Dashboard'
-import Image from '../../Components/Image';
-import { CATEGORIES, EDUCATIONARRAY, GIHUBARRAY, GoGreenCover, STATICLINKS } from '../../constant'
-import { openNewWindow } from '../../helpers';
+import { CATEGORIES, GIHUBARRAY, githubIcon, STATICLINKS } from '../../constant'
 import styles from './projectdashboard.module.scss';
-import { SkillComponent } from '../Education/SkillComponent/SkillComponent';
 import ProjectCard from './ProjectCard/ProjectCard';
+import Image from '../../Components/Image';
+import { openNewWindow } from '../../helpers';
+const BottomNote = () => {
+    return (
+        <p className={styles.bottomNote} onClick={() => openNewWindow(STATICLINKS.github)}>
+            Follow me on<br />   <span className={styles.bold}><Image src={githubIcon} className={styles.github} />GitHub</span> if you want, I suppose
+        </p>
+    )
+}
 const ProjectDashboard = () => {
     return (
-        <Dashboard category={CATEGORIES.PROJECTS}>
+        <Dashboard category={CATEGORIES.PROJECTS} bottomNote={<BottomNote />} variant='projects'>
             <div className={styles.mainContent}>
                 <div className={styles.middleSection}>
                     <div className={styles.coverContent}>
-                        <p className={styles.coverHeading}>CODEPENS</p>
+                        <p className={styles.coverHeading}>CODEPEN</p>
                         <ProjectCard />
                     </div>
 

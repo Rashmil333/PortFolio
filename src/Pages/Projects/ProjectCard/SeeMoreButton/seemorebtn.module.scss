@@ -1,0 +1,23 @@
+@import '../../../../variable.scss';
+.seePenButton {
+    outline: none;
+    border: 1px solid #ec633a;
+    width: 100%;
+    padding: .625rem 0;
+    margin-top: 1.25rem;
+    border-radius: 1.25rem;
+    background: transparent;
+    color: #ec633a;
+    cursor: pointer;
+    transition: 0.1s;
+    font-weight: 600;
+    font-family: $font-gothic;
+    &:hover {
+        background-color: #ec633a;
+        color: white;
+        transition: 0.3s;
+    }
+    .arrow {
+        margin: 0 0 .125rem .625rem;
+    }
+}

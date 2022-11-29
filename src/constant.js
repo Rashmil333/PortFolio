@@ -18,13 +18,14 @@ import lightsCover from './static/lights.png';
 import loaderCover from './static/loader.png';
 import cardThreeCover from './static/cardthree.png';
 import babyWritingCover from './static/babyWriting.png';
+import rightArrowRed from './static/rightArrowred.svg';
 
 export {
     BannerLogo,
     BG,
     gmailIcon,
     githubIcon, telePhoneIcon, copyIcon, GoGreenCover, rightarrowIcon, rightarrowIconNew, rightarrowIconLatest,
-    bubblesCover, aumCover, bmiCover, depressorCover, fireflyCover, lightsCover, loaderCover, festivaleCover, cardThreeCover, babyWritingCover
+    bubblesCover, aumCover, bmiCover, depressorCover, fireflyCover, lightsCover, loaderCover, festivaleCover, cardThreeCover, babyWritingCover, rightArrowRed
 };
 
 export const Links = [
@@ -231,12 +232,6 @@ export const CODEPENARRAY = [
     {
         title: 'Example of 3D Card',
         description: 'Still working on it',
-        link: 'https://react-three-fiber-3.web.app/sakhis',
-        img: fireflyCover,
-    },
-    {
-        title: 'Example of 3D Card',
-        description: 'Still working on it to make it fast',
         link: 'https://react-three-fiber-3.web.app/sakhis',
         img: cardThreeCover,
     },

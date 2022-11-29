@@ -40,21 +40,40 @@
                 }
 
             }
-            .educationMapper {}
         }
 
     }
     .middleSection {
         text-align: -webkit-right;
         padding-top: 5.3125rem;
+        @media screen and (max-width:1019px) {
+            padding-top: 16.3125rem;
+        }
         .coverContent {
             max-width: 25rem;
             text-align: initial;
+            @media screen and (max-width:1019px) {
+                max-width: inherit;
+            }
             .coverHeading {
                 @extend %captionText;
                 margin-bottom: 1.25rem;
             }
         }
 
+    }
+}
+
+.bottomNote {
+    font-family: $font-gothic;
+    line-height: 1.5625rem;
+    cursor: pointer;
+    .bold {
+        font-weight: 900;
+    }
+    .github {
+        width: .9375rem;
+        height: .9375rem;
+        margin: 0 .3125rem -0.125rem 0;
     }
 }
