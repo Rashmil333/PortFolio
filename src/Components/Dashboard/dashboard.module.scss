@@ -18,7 +18,10 @@
         margin-top: 5.125rem;
         position: fixed;
         &.projects {
-            left: 0;
+            @media screen and (max-width:480px) {
+                left: 0;
+            }
+
             .category {
                 display: block;
             }

@@ -10,6 +10,7 @@ const Router = () => {
             <Route path={Paths.HOME} element={<Home />} />
             <Route path={Paths.EDUCATION} element={<EducationDashboard />} />
             <Route path={Paths.PROJECTS} element={<ProjectDashboard />} />
+            <Route path={Paths.SKILLS} element={<EducationDashboard />} />
         </Routes>
     )
 }
