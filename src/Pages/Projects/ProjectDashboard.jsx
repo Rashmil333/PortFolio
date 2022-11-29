@@ -28,7 +28,7 @@ const ProjectDashboard = () => {
                         <div className={styles.educationMapper}>
                             {GIHUBARRAY.map((item, index) => {
                                 return (
-                                    <div className={styles.education} key={index}>
+                                    <div className={styles.education} key={index} onClick={() => openNewWindow(item.link)}>
                                         <p className={styles.course}>{item.title}</p>
                                         <p className={styles.description}>{item.description}</p>
                                     </div>

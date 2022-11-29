@@ -23,11 +23,15 @@
             }
             .education {
                 display: grid;
-                margin-bottom: 1.25rem;
+                // margin-bottom: 1.25rem;
                 row-gap: .4375rem;
                 position: relative;
-                padding-bottom: 1rem;
+                padding: 1rem 0;
                 border-bottom: 1px solid #9F9A9A;
+                cursor: pointer;
+                &:hover {
+                    background-color: #D1C9C940;
+                }
                 .course {
                     @extend %regularText;
                     text-transform: uppercase;
@@ -37,6 +41,7 @@
                 .description {
                     @extend %smallText;
                     max-width: 23.875rem;
+                    line-height: 1.25rem;
                 }
 
             }

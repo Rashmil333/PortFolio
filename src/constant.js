@@ -110,27 +110,33 @@ export const EDUCATIONARRAY = [
 export const GIHUBARRAY = [
     {
         title: 'Pagination with MultipleFilters',
-        description: 'This repository have the basic logics of multiple filterings of data and implementation of pagination concepts by using simple indexes logic'
+        description: 'This repository have the basic logics of multiple filterings of data and implementation of pagination concepts by using simple indexes logic',
+        link: 'https://github.com/Rashmil333/PaginationWithMultipleFlters',
     },
     {
         title: 'Weather App',
-        description: 'This is an app made using real time API and React Js. It tells the max and min temperature and humidity of any city around the world.'
+        description: 'This is an app made using real time API and React Js. It tells the max and min temperature and humidity of any city around the world.',
+        link: 'https://github.com/Rashmil333/WeatherAPP'
     },
     {
         title: 'Depressor',
-        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from depression,anxiety,stress,ten…'
+        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from depression,anxiety,stress,ten…',
+        link: 'https://github.com/Rashmil333/Depressor',
     },
     {
         title: 'CSS Profile',
-        description: 'It is my CSS Profile which consist of amazing CSS Effects.'
+        description: 'It is my CSS Profile which consist of amazing CSS Effects.',
+        link: 'https://github.com/Rashmil333/MY-CSS-Profile'
     },
     {
         title: 'Dashboard-ReactJs-Redux',
-        description: 'It is a front-end UI created by using ReactJS and Redux. It consist of Login, Logout, Dashboard of users functionality.'
+        description: 'It is a front-end UI created by using ReactJS and Redux. It consist of Login, Logout, Dashboard of users functionality.',
+        link: 'https://github.com/Rashmil333/Xcelpros-ReactJs-Redux'
     },
     {
         title: 'DEPRESSOR-MERN-STACK',
-        description: 'This is a social networking website made by using MERN STACK. It is made for the purpose to relax the person suffering from depression, stress, anxiety, tension, suicidal thoughts. It includes Real…'
+        description: 'This is a social networking website made by using MERN STACK. It is made for the purpose to relax the person suffering from depression, stress, anxiety, tension, suicidal thoughts. It includes Real…',
+        link: 'https://github.com/Rashmil333/DEPRESSOR-MERN-STACK'
     },
 
 ]
