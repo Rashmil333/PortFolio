@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+.sea {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Seaweed Script', cursive;
+    position: relative;
+    background-image: url('https://wallpaperaccess.com/full/1124155.jpg');
+    .enterButton {
+        position: absolute;
+        font-size: 7.25rem;
+        font-weight: 600;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        margin: 0;
+        color: rgba(122, 233, 144, 1);
+        cursor: pointer;
+    }
+}

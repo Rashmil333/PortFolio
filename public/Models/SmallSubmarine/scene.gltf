@@ -1,0 +1,428 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        119.35496520996094,
+        169.88763427734375,
+        144.68328857421875
+      ],
+      "min": [
+        -119.59201049804688,
+        -118.25675201416016,
+        -192.861328125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27660,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        1.0,
+        0.9999871850013733,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9919649958610535,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18440,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 36880,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 55320,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 73760,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 92200,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 110640,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 129080,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 147520,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 165960,
+      "componentType": 5126,
+      "count": 2305,
+      "max": [
+        0.9701618552207947,
+        0.9900000095367432
+      ],
+      "min": [
+        0.009999999776482582,
+        0.010000050067901611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 7842,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Scritta (https://sketchfab.com/scritta)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/stylized-yellow-submarine-lowpoly-asset-f0156027c96b43ad8003efd8e153187b",
+      "title": "Stylized Yellow Submarine lowpoly asset"
+    },
+    "generator": "Sketchfab-14.32.1",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 31368,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 184400,
+      "byteOffset": 31368,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 55320,
+      "byteOffset": 215768,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 36880,
+      "byteOffset": 271088,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 307968,
+      "uri": "ltf.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Submarine__0_baseColor.png"
+    },
+    {
+      "uri": "textures/Submarine__0_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Submarine__0_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Submarine__0",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Submarine__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5,
+            "TEXCOORD_3": 6,
+            "TEXCOORD_4": 7,
+            "TEXCOORD_5": 8,
+            "TEXCOORD_6": 9,
+            "TEXCOORD_7": 10,
+            "TEXCOORD_8": 11,
+            "TEXCOORD_9": 12
+          },
+          "indices": 13,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "b8dc8422fb2041d8ae4a25a3f47bfb10.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.999999999999999,
+        4.3711384246670735e-08,
+        0.0,
+        0.0,
+        -4.3711384246670735e-08,
+        0.999999999999999,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Submarine"
+    },
+    {
+      "mesh": 0,
+      "name": "Submarine__0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

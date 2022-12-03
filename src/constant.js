@@ -20,8 +20,10 @@ import cardThreeCover from './static/cardthree.png';
 import babyWritingCover from './static/babyWriting.png';
 import rightArrowRed from './static/rightArrowred.svg';
 import { CallSVG, GithubSvg, Mailsvg } from './SVG/LinksIcons';
+import seabg from './static/seabg.jpg';
 
 export {
+    seabg,
     BannerLogo,
     BG,
     gmailIcon,
