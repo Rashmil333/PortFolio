@@ -25,11 +25,11 @@ const Mariana = () => {
     return (
         <div className={styles.sea}>
             <p className={styles.enterButton}>Launch My ship</p>
-            {/* <Canvas>
+            <Canvas>
                 <Ship />
                 <ambientLight />
                 <OrbitControls />
-            </Canvas> */}
+            </Canvas>
         </div>
     )
 }

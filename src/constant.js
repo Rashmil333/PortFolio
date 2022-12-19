@@ -19,6 +19,8 @@ import loaderCover from './static/loader.png';
 import cardThreeCover from './static/cardthree.png';
 import babyWritingCover from './static/babyWriting.png';
 import rightArrowRed from './static/rightArrowred.svg';
+import CakeCover from './static/Cake.png';
+import TextPCover from './static/textp.png';
 import { CallSVG, GithubSvg, Mailsvg } from './SVG/LinksIcons';
 import seabg from './static/seabg.jpg';
 
@@ -38,7 +40,7 @@ export const Links = [
 ]
 
 
-export const Description = "Rashmil Rajpoot is a software developer mostly engaged in front-end using React and made a project using MERN stack. Rashmil have graduated in IT in 2022 with an aggregate of 74%.He has worked for 2 years as a Front-End developer."
+export const Description = "Rashmil Rajpoot is a software developer mostly engaged in front-end using React and made a project using MERN stack.He has worked for 2 years as a Front-End developer."
 
 export const Paths = {
     HOME: '/',
@@ -67,8 +69,8 @@ export const VARIANTS = {
 
 export const EDUCATIONARRAY = [
     {
-        title: 'Currently learning',
-        description: 'Python DSA, Nest'
+        title: 'Currently looking',
+        description: 'Full stack/React jobs'
     },
     {
         title: 'Xcelpros Technologies private Limited(during grad)',
@@ -137,7 +139,7 @@ export const GIHUBARRAY = [
     },
     {
         title: 'DEPRESSOR-MERN-STACK',
-        description: 'This is a social networking website made by using MERN STACK. It is made for the purpose to relax the person suffering from depression, stress, anxiety, tension, suicidal thoughts. It includes Real…',
+        description: 'This is a social networking website made by using MERN STACK.',
         link: 'https://github.com/Rashmil333/DEPRESSOR-MERN-STACK'
     },
 
@@ -267,5 +269,17 @@ export const CODEPENARRAY = [
         description: 'SVG and animations',
         link: 'https://react-three-fiber-3.web.app/babyWriting',
         img: babyWritingCover,
+    },
+    {
+        title: 'Sliding content',
+        description: 'Horizontal slider',
+        link: 'https://react-three-fiber-3.web.app/sliding-content',
+        img: CakeCover,
+    },
+    {
+        title: 'A Simple Word game',
+        description: 'Particulation of Text',
+        link: 'https://react-three-fiber-3.web.app/particulationVisit',
+        img: TextPCover,
     }
 ]
