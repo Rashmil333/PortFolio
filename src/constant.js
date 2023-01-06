@@ -124,7 +124,7 @@ export const GIHUBARRAY = [
     },
     {
         title: 'Depressor',
-        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from depression,anxiety,stress,ten…',
+        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from any issues.'
         link: 'https://github.com/Rashmil333/Depressor',
     },
     {
