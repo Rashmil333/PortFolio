@@ -1,6 +1,6 @@
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import Image from '../../Components/Image';
-import { CATEGORIES, EDUCATIONARRAY, GoGreenCover, STATICLINKS } from '../../constant'
+import { CATEGORIES, EDUCATIONARRAY, SpaceTour, STATICLINKS } from '../../constant'
 import { openNewWindow } from '../../helpers';
 import styles from './educationdashboard.module.scss';
 import { SkillComponent } from './SkillComponent/SkillComponent';
@@ -11,16 +11,15 @@ const EducationDashboard = () => {
                 <div className={styles.middleSection}>
                     <div className={styles.coverContent}>
                         <div className={styles.coverTopSection} onClick={() => openNewWindow(STATICLINKS.coverlink)}>
-                            <Image src={GoGreenCover} className={styles.cover} />
+                            <Image src={SpaceTour} className={styles.cover} />
                             <p className={styles.coverhint}>Recently made this.</p>
-                            <p className={styles.coverTitle}>Steps flow with model parallely</p>
+                            <p className={styles.coverTitle}>A small tour highlighting the facts of the planets</p>
                         </div>
 
 
                         <p className={styles.heading}>SKILLS</p>
                         <SkillComponent />
                     </div>
-
                 </div>
                 <div className={styles.educationRightSection}>
                     <div className={styles.eduContent}>

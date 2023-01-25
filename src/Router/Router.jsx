@@ -1,18 +1,20 @@
-import Home from '../Pages/Home/Home';
 import { Routes, Route } from 'react-router-dom'
 import { Paths } from '../constant';
-import EducationDashboard from '../Pages/Education/EducationDashboard';
-import ProjectDashboard from '../Pages/Projects/ProjectDashboard';
-import Mariana from '../Pages/Mariana/Mariana';
+import { lazy, Suspense } from 'react';
+import Loader from '../Components/Loader/Loader';
+const EducationDashboard = lazy(() => import('../Pages/Education/EducationDashboard'));
+const ProjectDashboard = lazy(() => import('../Pages/Projects/ProjectDashboard'));
+const Mariana = lazy(() => import('../Pages/Mariana/Mariana'));
+const Home = lazy(() => import('../Pages/Home/Home'));
 
 const Router = () => {
     return (
         <Routes>
-            <Route path={Paths.HOME} element={<Home />} />
-            <Route path={Paths.EDUCATION} element={<EducationDashboard />} />
-            <Route path={Paths.PROJECTS} element={<ProjectDashboard />} />
-            <Route path={Paths.SKILLS} element={<EducationDashboard />} />
-            <Route path={'/mariana-trench'} element={<Mariana />} />
+            <Route path={Paths.HOME} element={<Suspense fallback={<Loader />}><Home /></Suspense>} />
+            <Route path={Paths.EDUCATION} element={<Suspense fallback={null}><EducationDashboard /></Suspense>} />
+            <Route path={Paths.PROJECTS} element={<Suspense fallback={null}><ProjectDashboard /></Suspense>} />
+            <Route path={Paths.SKILLS} element={<Suspense fallback={null}><EducationDashboard /></Suspense>} />
+            <Route path={'/mariana-trench'} element={<Suspense fallback={null}><Mariana /></Suspense>} />
         </Routes>
     )
 }

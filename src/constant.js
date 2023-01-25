@@ -1,15 +1,17 @@
 import BannerLogo from './static/tropical-leaves.png';
-import BG from './static/flowerFavicon.jpg';
 import githubIcon from './static/githubIcon.svg';
 import gmailIcon from './static/gmailIcon.svg';
 import telePhoneIcon from './static/telephoneIcon.svg';
 import copyIcon from './static/copyIcon.svg';
 import GoGreenCover from './static/go-greenImage.PNG';
+import SpaceTour from './static/space-tour.png';
+import PendulumWavesCover from './static/pendulum-waves.png';
 import rightarrowIcon from './static/right-arrow1.svg';
 import rightarrowIconNew from './static/rightArrowNew.svg';
 import rightarrowIconLatest from './static/rightArrowLatest.svg';
 import festivaleCover from './static/festival.png';
 import bubblesCover from './static/bubbles.png';
+import weatherAppCover from './static/weather-app.png';
 import aumCover from './static/aum.png';
 import bmiCover from './static/bmi.png';
 import depressorCover from './static/depressor.png';
@@ -22,12 +24,10 @@ import rightArrowRed from './static/rightArrowred.svg';
 import CakeCover from './static/Cake.png';
 import TextPCover from './static/textp.png';
 import { CallSVG, GithubSvg, Mailsvg } from './SVG/LinksIcons';
-import seabg from './static/seabg.jpg';
 
 export {
-    seabg,
+    SpaceTour,
     BannerLogo,
-    BG,
     gmailIcon,
     githubIcon, telePhoneIcon, copyIcon, GoGreenCover, rightarrowIcon, rightarrowIconNew, rightarrowIconLatest,
     bubblesCover, aumCover, bmiCover, depressorCover, fireflyCover, lightsCover, loaderCover, festivaleCover, cardThreeCover, babyWritingCover, rightArrowRed
@@ -78,7 +78,7 @@ export const EDUCATIONARRAY = [
     },
     {
         title: 'B-TECH IT',
-        description: 'aggregate 74%'
+        description: 'aggregate 78%'
     },
     {
         title: 'Internship on React',
@@ -113,7 +113,7 @@ export const EDUCATIONARRAY = [
 
 export const GIHUBARRAY = [
     {
-        title: 'Pagination with MultipleFilters',
+        title: 'Pagination with Multiple Filters',
         description: 'This repository have the basic logics of multiple filterings of data and implementation of pagination concepts by using simple indexes logic',
         link: 'https://github.com/Rashmil333/PaginationWithMultipleFlters',
     },
@@ -124,7 +124,7 @@ export const GIHUBARRAY = [
     },
     {
         title: 'Depressor',
-        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from any issues.'
+        description: 'This is the front-end website using HTML,CSS,BOOTSTRAP,JAVASCRIPT.It is based on the benefit for society.It provides the community to the people who are suffering from any issues.',
         link: 'https://github.com/Rashmil333/Depressor',
     },
     {
@@ -140,7 +140,7 @@ export const GIHUBARRAY = [
     {
         title: 'DEPRESSOR-MERN-STACK',
         description: 'This is a social networking website made by using MERN STACK.',
-        link: 'https://github.com/Rashmil333/DEPRESSOR-MERN-STACK'
+        link: 'https://github.com/Rashmil333/Mern-App-Depressor'
     },
 
 ]
@@ -205,11 +205,23 @@ export const SKILLSARRAY = [
 ]
 
 export const STATICLINKS = {
-    coverlink: 'https://react-three-fiber-3.web.app/react-house',
+    coverlink: 'https://react-three-fiber-3.web.app/space-tour',
     github: 'https://github.com/Rashmil333?tab=repositories'
 };
 
 export const CODEPENARRAY = [
+    {
+        title: 'PENDULUM-WAVES',
+        description: 'A short visualization of Pendulum-waves.',
+        link: 'https://react-three-fiber-3.web.app/pendulum-waves',
+        img: PendulumWavesCover,
+    },
+    {
+        title: 'Small tour for Kids',
+        description: 'Tried to create a small tour having some info of the planets.',
+        link: 'https://react-three-fiber-3.web.app/space-tour',
+        img: SpaceTour,
+    },
     {
         title: 'MERN STACK Website',
         description: 'It is a type of social networking website,still working on it',
@@ -281,5 +293,17 @@ export const CODEPENARRAY = [
         description: 'Particulation of Text',
         link: 'https://react-three-fiber-3.web.app/particulationVisit',
         img: TextPCover,
+    },
+    {
+        title: 'Air-Bubbles',
+        description: 'I used mousemove event in js and just displacing the svgs',
+        link: 'https://react-three-fiber-3.web.app/bubbles',
+        img: bubblesCover,
+    },
+    {
+        title: 'Weather-App',
+        description: 'Fetching the open-weather-api and mapping the data.',
+        link: 'https://assignment-codeparva.web.app/proto-weather',
+        img: weatherAppCover,
     }
 ]

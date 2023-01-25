@@ -1,0 +1,11 @@
+@import '../../variable.scss';
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %regularText;
+    color: black;
+    font-size: 1.875rem;
+}

@@ -1,14 +1,19 @@
+import { lazy, Suspense } from 'react';
 import { Links } from '../../../../../constant';
 import { linkOnClickHandler } from '../../../../../helpers';
-import ToolTip from '../ToolTip/ToolTip';
 import styles from './socialLinkComponent.module.scss';
+const ToolTip = lazy(() => import('../ToolTip/ToolTip'));
 
 const SocialLinksComponent = (props) => {
     const { setShowDetail, showDetail, variant } = props;
     return (
         <div className={`${styles.socialLinks} ${styles[variant]}`}>
             <div className={styles.linksContainer}>
-                {showDetail?.value && (<ToolTip text={showDetail?.value} id={showDetail?.id} />)}
+                {showDetail?.value && (
+                    <Suspense fallback={null}>
+                        <ToolTip text={showDetail?.value} id={showDetail?.id} />
+                    </Suspense>
+                )}
                 {Links.map((link, index) => {
                     return (
                         <span key={index} >
@@ -26,4 +31,4 @@ const SocialLinksComponent = (props) => {
     )
 }
 
-export default SocialLinksComponent
+export default SocialLinksComponent;

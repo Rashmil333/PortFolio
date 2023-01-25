@@ -10,12 +10,12 @@ export const Flowers = ({ hovered }) => {
     })
     return (
         <group ref={flowersRef} position={[0, 0, 0]}>
-            <WhiteBloodCell index={1} hovered={hovered} position={[0, 0, 0]} texture={'/Textures/flower1.webp'} />
+            <WhiteBloodCell index={1} hovered={hovered} position={[0, 0, 0]} texture={'/Textures/flower 1.png'} />
             <WhiteBloodCell index={2} hovered={hovered} position={[2, 0, -4]} texture={'/Textures/flower4.jfif'} />
             <WhiteBloodCell index={3} hovered={hovered} position={[-2, 0, -4]} texture={'/Textures/flower4.jfif'} />
             <WhiteBloodCell index={4} hovered={hovered} position={[-3, 2, -4]} texture={'/Textures/flower5.jpg'} />
             <WhiteBloodCell index={5} hovered={hovered} position={[-4, -2, -4]} texture={'/Textures/flower6.webp'} />
-            <WhiteBloodCell index={6} hovered={hovered} position={[-6, 0, -5]} texture={'/Textures/flower1.webp'} />
+            <WhiteBloodCell index={6} hovered={hovered} position={[-6, 0, -5]} texture={'/Textures/flower 1.png'} />
             <WhiteBloodCell index={7} hovered={hovered} position={[1.5, 0, -4]} texture={'/Textures/flower4.jfif'} />
             <WhiteBloodCell index={8} hovered={hovered} position={[6, -1, -10]} texture={'/Textures/flower4.jfif'} />
             <WhiteBloodCell index={9} hovered={hovered} position={[7, 2, -20]} texture={'/Textures/flower5.jpg'} />
