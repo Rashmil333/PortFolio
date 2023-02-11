@@ -17,6 +17,7 @@ import bmiCover from './static/bmi.png';
 import depressorCover from './static/depressor.png';
 import fireflyCover from './static/firefly.png';
 import lightsCover from './static/lights.png';
+import spiralingorbsCover from './static/spiraling-orbs.png';
 import loaderCover from './static/loader.png';
 import cardThreeCover from './static/cardthree.png';
 import babyWritingCover from './static/babyWriting.png';
@@ -30,7 +31,7 @@ export {
     BannerLogo,
     gmailIcon,
     githubIcon, telePhoneIcon, copyIcon, GoGreenCover, rightarrowIcon, rightarrowIconNew, rightarrowIconLatest,
-    bubblesCover, aumCover, bmiCover, depressorCover, fireflyCover, lightsCover, loaderCover, festivaleCover, cardThreeCover, babyWritingCover, rightArrowRed
+    bubblesCover, aumCover, bmiCover, depressorCover, fireflyCover, lightsCover, loaderCover, festivaleCover, cardThreeCover, babyWritingCover, rightArrowRed, spiralingorbsCover
 };
 
 export const Links = [
@@ -205,11 +206,17 @@ export const SKILLSARRAY = [
 ]
 
 export const STATICLINKS = {
-    coverlink: 'https://react-three-fiber-3.web.app/space-tour',
+    coverlink: 'https://react-three-fiber-3.web.app/spiraling-orbs',
     github: 'https://github.com/Rashmil333?tab=repositories'
 };
 
 export const CODEPENARRAY = [
+    {
+        title: 'Spiraling-orbs',
+        description: 'Unexpected patterns shown by spirals..',
+        link: 'https://react-three-fiber-3.web.app/spiraling-orbs',
+        img: spiralingorbsCover,
+    },
     {
         title: 'PENDULUM-WAVES',
         description: 'A short visualization of Pendulum-waves.',
