@@ -1,19 +1,22 @@
-import { useState } from "react";
-import { circularloopSoon, robotSoon } from "../../constant";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { circularloopSoon, robotSoon, sunflower } from "../../constant";
 import { randomArrayElement, randomIntFromInterval } from "../../helpers";
 import styles from "./banner.module.scss";
-const Banner = () => {
-  const [hovered, setHovered] = useState(false);
-  const RandomCircles = Array(20)
-    .fill()
-    .map((_, index) => {
-      return {
-        id: index,
-      };
-    });
+
+const Hello = () => {
+  const randomData = useMemo(() => {
+    const RandomCircles = Array(20)
+      .fill()
+      .map((_, index) => {
+        return {
+          id: index,
+        };
+      });
+    return RandomCircles;
+  }, []);
   return (
-    <div className={styles.bannerWrapper}>
-      {RandomCircles.map((_, index) => {
+    <>
+      {randomData.map((_, index) => {
         const randomDimensions = randomArrayElement([
           "10px",
           "74px",
@@ -46,10 +49,80 @@ const Banner = () => {
           ></div>
         );
       })}
+    </>
+  );
+};
+const TimeRemaining = () => {
+  const d = new Date();
+  const [currTime, setCurrTime] = useState(d);
+
+  useEffect(() => {
+    let setInterval_ = setInterval(() => {
+      const d = new Date();
+      setCurrTime(d);
+    }, 1000);
+    return () => clearInterval(setInterval_);
+  });
+
+  const getHoursHandler = useCallback(() => {
+    const ampmtime = currTime.toLocaleString("en-US", {
+      hour: "numeric",
+      hour12: true,
+    });
+    if (currTime.getHours() > 12) {
+      return 24 - currTime.getHours();
+    }
+    if (ampmtime.slice(ampmtime.length - 2, ampmtime.length) === "PM") {
+      return 24 - currTime.getHours() + 12;
+    }
+    return currTime.getHours();
+  }, [currTime]);
+
+  return (
+    <p className={styles.remainingTime}>
+      <span className={styles.timeBig}>{27 - currTime.getDate()}</span>days
+      &nbsp;
+      <span className={styles.timeBig}>{getHoursHandler()}</span>h &nbsp;
+      <span className={styles.timeBig}>{60 - currTime.getMinutes()}</span>
+      min&nbsp;
+      <span className={styles.timeBig}>{60 - currTime.getSeconds()}</span>sec
+    </p>
+  );
+};
+const Banner = () => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <div className={styles.bannerWrapper}>
+      <Hello />
       <div className={styles.bannerContent}>
-        <p className={styles.heading}>
-          <span>C</span>oming soon<span>N!</span>
-        </p>
+        <div className={styles.bannerHeader}>
+          <p className={styles.heading}>
+            <span>C</span>oming soon<span>N!</span>
+          </p>
+        </div>
+        <div className={styles.banner_card}>
+          <img src={sunflower} className={styles.poster} alt="" />
+          <div className={styles.textSec}>
+            <p className={styles.title}>Sunflower</p>
+            <button
+              className={styles.watchbtn}
+              onPointerOver={() => setHovered(true)}
+              onPointerOut={() => setHovered(false)}
+              // onClick={() =>
+              //   window.open("https://new-projects-pen.web.app/stack", "__blank")
+              // }
+            >
+              Coming Soon
+            </button>
+          </div>
+        </div>
+        <div className={styles.bannerHeader}>
+          <p className={styles.heading}>
+            <span>L</span>atest
+          </p>
+        </div>
+
         <div className={styles.banner_card}>
           <div className={styles.textSec}>
             <p className={styles.title}>
@@ -59,22 +132,31 @@ const Banner = () => {
               className={styles.watchbtn}
               onPointerOver={() => setHovered(true)}
               onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open("https://new-projects-pen.web.app/stack", "__blank")
+              }
             >
-              Watch
+              Watch Pen
             </button>
           </div>
-          <img src={robotSoon} className={styles.poster} />
+          <img src={robotSoon} className={styles.poster} alt="" />
         </div>
         <div className={`${styles.banner_card} ${styles.mt}`}>
-          <img src={circularloopSoon} className={styles.poster} />
+          <img src={circularloopSoon} className={styles.poster} alt="" />
           <div className={styles.textSec}>
             <p className={styles.title}>Endless Circular Wave.</p>
             <button
               className={`${styles.watchbtn} ${styles.pinkbtn}`}
               onPointerOver={() => setHovered(true)}
               onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open(
+                  "https://new-projects-pen.web.app/circular-loop",
+                  "__blank"
+                )
+              }
             >
-              Watch
+              Watch Pen
             </button>
           </div>
         </div>

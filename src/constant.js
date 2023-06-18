@@ -27,6 +27,9 @@ import TextPCover from "./static/textp.png";
 import { CallSVG, GithubSvg, Mailsvg } from "./SVG/LinksIcons";
 import robotSoon from "./static/robot.png";
 import circularloopSoon from "./static/waveloop.png";
+import sunflower from "./static/sunflower.png";
+import stackCover from "./static/stackCover.png";
+import circularLoopCover from "./static/circularLoopCover.png";
 
 export {
   SpaceTour,
@@ -53,6 +56,8 @@ export {
   spiralingorbsCover,
   robotSoon,
   circularloopSoon,
+  sunflower,
+  stackCover
 };
 
 export const Links = [
@@ -238,11 +243,23 @@ export const SKILLSARRAY = [
 ];
 
 export const STATICLINKS = {
-  coverlink: "https://react-three-fiber-3.web.app/spiraling-orbs",
+  coverlink: "https://new-projects-pen.web.app/stack",
   github: "https://github.com/Rashmil333?tab=repositories",
 };
 
 export const CODEPENARRAY = [
+  {
+    title: "Circular-Wave",
+    description: "Geometries in loop",
+    link: "https://new-projects-pen.web.app/circular-loop",
+    img: circularLoopCover,
+  },
+  {
+    title: "Stack",
+    description: "Tried Basics of Rigging",
+    link: "https://new-projects-pen.web.app/stack",
+    img: stackCover,
+  },
   {
     title: "Spiraling-orbs",
     description: "Unexpected patterns shown by spirals..",

@@ -4,6 +4,7 @@ import {
   CATEGORIES,
   EDUCATIONARRAY,
   spiralingorbsCover,
+  stackCover,
   STATICLINKS,
 } from "../../constant";
 import { openNewWindow } from "../../helpers";
@@ -19,11 +20,9 @@ const EducationDashboard = () => {
               className={styles.coverTopSection}
               onClick={() => openNewWindow(STATICLINKS.coverlink)}
             >
-              <Image src={spiralingorbsCover} className={styles.cover} />
+              <Image src={stackCover} className={styles.cover} />
               <p className={styles.coverhint}>Recently made this.</p>
-              <p className={styles.coverTitle}>
-                Unexpected patterns shown by spirals
-              </p>
+              <p className={styles.coverTitle}>Tried basics of Rigging</p>
             </div>
 
             <p className={styles.heading}>SKILLS</p>
