@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { circularloopSoon, robotSoon, sunflower } from "../../constant";
+import { robotSoon, simplySidebarsCover, sunflower } from "../../constant";
 import { randomArrayElement, randomIntFromInterval } from "../../helpers";
 import styles from "./banner.module.scss";
 
@@ -96,9 +96,49 @@ const Banner = () => {
     <div className={styles.bannerWrapper}>
       <Hello />
       <div className={styles.bannerContent}>
-        <div className={styles.bannerHeader}>
+        {/* <div className={styles.bannerHeader}>
           <p className={styles.heading}>
             <span>C</span>oming soon<span>N!</span>
+          </p>
+        </div> */}
+        {/* <div className={styles.banner_card}>
+          <img src={sunflower} className={styles.poster} alt="" />
+          <div className={styles.textSec}>
+            <p className={styles.title}>Sunflower</p>
+            <button
+              className={styles.watchbtn}
+              onPointerOver={() => setHovered(true)}
+              onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open("https://new-projects-pen.web.app/morph", "__blank")
+              }
+            >
+              Watch Pen
+            </button>
+          </div>
+        </div> */}
+        <div className={`${styles.banner_card} ${styles.mt}`}>
+          <img src={simplySidebarsCover} className={styles.poster} alt="" />
+          <div className={styles.textSec}>
+            <p className={styles.title}>Simply Sidebars.</p>
+            <button
+              className={`${styles.watchbtn} ${styles.pinkbtn}`}
+              onPointerOver={() => setHovered(true)}
+              onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open(
+                  "https://new-projects-pen.web.app/simply-sidebars",
+                  "__blank"
+                )
+              }
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div className={styles.bannerHeader}>
+          <p className={styles.heading}>
+            <span>L</span>atest
           </p>
         </div>
         <div className={styles.banner_card}>
@@ -109,20 +149,14 @@ const Banner = () => {
               className={styles.watchbtn}
               onPointerOver={() => setHovered(true)}
               onPointerOut={() => setHovered(false)}
-              // onClick={() =>
-              //   window.open("https://new-projects-pen.web.app/stack", "__blank")
-              // }
+              onClick={() =>
+                window.open("https://new-projects-pen.web.app/morph", "__blank")
+              }
             >
-              Coming Soon
+              Watch Pen
             </button>
           </div>
         </div>
-        <div className={styles.bannerHeader}>
-          <p className={styles.heading}>
-            <span>L</span>atest
-          </p>
-        </div>
-
         <div className={styles.banner_card}>
           <div className={styles.textSec}>
             <p className={styles.title}>
@@ -140,25 +174,6 @@ const Banner = () => {
             </button>
           </div>
           <img src={robotSoon} className={styles.poster} alt="" />
-        </div>
-        <div className={`${styles.banner_card} ${styles.mt}`}>
-          <img src={circularloopSoon} className={styles.poster} alt="" />
-          <div className={styles.textSec}>
-            <p className={styles.title}>Endless Circular Wave.</p>
-            <button
-              className={`${styles.watchbtn} ${styles.pinkbtn}`}
-              onPointerOver={() => setHovered(true)}
-              onPointerOut={() => setHovered(false)}
-              onClick={() =>
-                window.open(
-                  "https://new-projects-pen.web.app/circular-loop",
-                  "__blank"
-                )
-              }
-            >
-              Watch Pen
-            </button>
-          </div>
         </div>
       </div>
     </div>

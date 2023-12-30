@@ -3,8 +3,7 @@ import Image from "../../Components/Image";
 import {
   CATEGORIES,
   EDUCATIONARRAY,
-  spiralingorbsCover,
-  stackCover,
+  simplySidebarsCover,
   STATICLINKS,
 } from "../../constant";
 import { openNewWindow } from "../../helpers";
@@ -20,9 +19,11 @@ const EducationDashboard = () => {
               className={styles.coverTopSection}
               onClick={() => openNewWindow(STATICLINKS.coverlink)}
             >
-              <Image src={stackCover} className={styles.cover} />
+              <Image src={simplySidebarsCover} className={styles.cover} />
               <p className={styles.coverhint}>Recently made this.</p>
-              <p className={styles.coverTitle}>Tried basics of Rigging</p>
+              <p className={styles.coverTitle}>
+                Easeee way to get sidebars into your projects!
+              </p>
             </div>
 
             <p className={styles.heading}>SKILLS</p>

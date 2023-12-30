@@ -28,6 +28,9 @@ import { CallSVG, GithubSvg, Mailsvg } from "./SVG/LinksIcons";
 import robotSoon from "./static/robot.png";
 import circularloopSoon from "./static/waveloop.png";
 import sunflower from "./static/sunflower.png";
+import sunflowerCover from "./static/sunflowerCover.png";
+import simplySidebarsCover from "./static/simply-sidebarsCover.png";
+
 import stackCover from "./static/stackCover.png";
 import circularLoopCover from "./static/circularLoopCover.png";
 
@@ -57,7 +60,9 @@ export {
   robotSoon,
   circularloopSoon,
   sunflower,
-  stackCover
+  sunflowerCover,
+  stackCover,
+  simplySidebarsCover,
 };
 
 export const Links = [
@@ -243,11 +248,25 @@ export const SKILLSARRAY = [
 ];
 
 export const STATICLINKS = {
-  coverlink: "https://new-projects-pen.web.app/stack",
+  coverlink: "https://new-projects-pen.web.app/simply-sidebars",
   github: "https://github.com/Rashmil333?tab=repositories",
 };
 
 export const CODEPENARRAY = [
+  {
+    title: "Simply-Sidebars",
+    description:
+      "An easeee way to get the sidebars into your project ! LEFT , RIGHT , BOTTOM , TOP it has all!",
+    link: "https://new-projects-pen.web.app/simply-sidebars",
+    img: simplySidebarsCover,
+  },
+  {
+    title: "Text Morphism",
+    description:
+      "Morphism using particulation. Characters are morphing into different states.( I-L-U)",
+    link: "https://new-projects-pen.web.app/morph",
+    img: sunflowerCover,
+  },
   {
     title: "Circular-Wave",
     description: "Geometries in loop",
