@@ -32,7 +32,7 @@ const EducationDashboard = () => {
         </div>
         <div className={styles.educationRightSection}>
           <div className={styles.eduContent}>
-            <p className={styles.caption}>FORMAL {CATEGORIES.EDUCATION}</p>
+            <p className={styles.caption}>TECHNICAL EDUCATION</p>
             <div className={styles.educationMapper}>
               {EDUCATIONARRAY.map((item, index) => {
                 return (

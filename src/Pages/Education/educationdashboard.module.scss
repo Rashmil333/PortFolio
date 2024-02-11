@@ -1,124 +1,122 @@
-@import '../../variable.scss';
+@import "../../variable.scss";
 
 .mainContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-width:1200px) {
-        column-gap: 5.9375rem;
-        grid-template-columns: 1fr 0.5fr;
+  @media screen and (max-width: 1200px) {
+    column-gap: 5.9375rem;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  @media screen and (max-width: 1019px) {
+    grid-template-columns: auto;
+  }
+
+  .educationRightSection {
+    justify-content: flex-end;
+    margin-top: 5rem;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 25rem;
     }
 
-    @media screen and (max-width:1019px) {
-        grid-template-columns: auto;
-    }
+    .eduContent {
+      float: right;
 
-    .educationRightSection {
-        justify-content: flex-end;
-        margin-top: 5rem;
+      .caption {
+        @extend %captionText;
+        margin-bottom: 1.25rem;
+      }
 
-        @media screen and (max-width:1200px) {
-            max-width: 25rem;
+      .education {
+        display: grid;
+        margin-bottom: 1.25rem;
+        row-gap: 0.4375rem;
+        position: relative;
+        padding-left: 1.125rem;
+
+        .course {
+          @extend %regularText;
         }
 
-        .eduContent {
-            float: right;
-
-            .caption {
-                @extend %captionText;
-                margin-bottom: 1.25rem;
-            }
-
-            .education {
-                display: grid;
-                margin-bottom: 1.25rem;
-                row-gap: .4375rem;
-                position: relative;
-                padding-left: 1.125rem;
-
-                .course {
-                    @extend %regularText;
-                }
-
-                .description {
-                    @extend %smallText;
-                }
-
-                &::before {
-                    position: absolute;
-                    content: '';
-                    width: .5rem;
-                    height: .5rem;
-                    background-color: black;
-                    border-radius: 50%;
-                    left: -0.25rem;
-                    top: .375rem;
-                }
-            }
-
-            .educationMapper {
-                border-left: 1px solid black;
-                // padding-left: 1.125rem;
-            }
+        .description {
+          @extend %smallText;
         }
 
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: rgb(156 163 175);
+          border-radius: 50%;
+          left: -0.25rem;
+          top: 0.375rem;
+        }
+      }
+
+      .educationMapper {
+        border-left: 1px solid rgb(156 163 175);
+        // padding-left: 1.125rem;
+      }
     }
+  }
 
-    .middleSection {
-        text-align: -webkit-right;
-        padding-top: 5.3125rem;
+  .middleSection {
+    text-align: -webkit-right;
+    padding-top: 5.3125rem;
 
-        .coverContent {
-            max-width: 25rem;
-            text-align: initial;
+    .coverContent {
+      max-width: 25rem;
+      text-align: initial;
 
-            @media screen and (max-width:1019px) {
-                max-width: inherit;
+      @media screen and (max-width: 1019px) {
+        max-width: inherit;
 
-                .coverTopSection {
-                    text-align: center;
-                }
-            }
+        .coverTopSection {
+          text-align: center;
+        }
+      }
 
-            .cover {
-                width: 25rem;
-                height: 15.625rem;
-                margin-bottom: 1.875rem;
-                cursor: pointer;
-                box-shadow: 0 0 .3125rem grey;
-                object-fit: cover;
+      .cover {
+        width: 25rem;
+        height: 15.625rem;
+        margin-bottom: 1.875rem;
+        cursor: pointer;
+        box-shadow: 0 0 0.3125rem grey;
+        object-fit: cover;
 
-                @media screen and (max-width:767px) {
-                    width: 75%;
-                    height: 100%;
-                }
-
-                @media screen and (max-width:482px) {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-            .coverhint {
-                @extend %smallText;
-                cursor: pointer;
-                width: auto;
-            }
-
-            .coverTitle {
-                // @extend %regularText;
-                font-size: 1.375rem;
-                font-weight: 600;
-                margin: .0625rem 0 0 0;
-                cursor: pointer;
-            }
-
-            .heading {
-                @extend %captionText;
-                margin-top: 3.125rem;
-                margin-bottom: 2.25rem;
-            }
+        @media screen and (max-width: 767px) {
+          width: 75%;
+          height: 100%;
         }
 
+        @media screen and (max-width: 482px) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .coverhint {
+        @extend %smallText;
+        cursor: pointer;
+        width: auto;
+      }
+
+      .coverTitle {
+        // @extend %regularText;
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin: 0.0625rem 0 0 0;
+        cursor: pointer;
+      }
+
+      .heading {
+        @extend %captionText;
+        margin-top: 3.125rem;
+        margin-bottom: 2.25rem;
+      }
     }
+  }
 }

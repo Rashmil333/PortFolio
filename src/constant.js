@@ -98,7 +98,7 @@ export const CATEGORIES = {
 
 export const MainLinks = [
   { title: CATEGORIES.EDUCATION, path: Paths.EDUCATION },
-  { title: CATEGORIES.SKILLS, path: Paths.SKILLS },
+  // { title: CATEGORIES.SKILLS, path: Paths.SKILLS },
   { title: CATEGORIES.PROJECTS, path: Paths.PROJECTS },
 ];
 
@@ -109,7 +109,7 @@ export const VARIANTS = {
 
 export const EDUCATIONARRAY = [
   {
-    title: "Currently looking",
+    title: "Currenty looking",
     description: "Full stack/React jobs",
   },
   {
@@ -130,25 +130,24 @@ export const EDUCATIONARRAY = [
   },
   {
     title: "Mern Stack (DEPRESSOR)",
-    description: "A type of social networking website.",
+    description: "A type of social networking website",
   },
   {
-    title: "Python",
-    description: "Achieved 4.2 stars on hackkerank till nov 2021",
+    title: "Hackkerank-Python",
+    description: "4.2 stars",
   },
   {
-    title: "Coursera courses on python",
-    description:
-      "Around 4 certificates related to python basics,algos,some data structures",
+    title: "Coursera-python",
+    description: "basics , algos and data structures",
   },
-  {
-    title: "12th Education(Science)",
-    description: "76%",
-  },
-  {
-    title: "10th",
-    description: "88%",
-  },
+  // {
+  //   title: "12th Education(Science)",
+  //   description: "76%",
+  // },
+  // {
+  //   title: "10th",
+  //   description: "88%",
+  // },
 ];
 
 export const GIHUBARRAY = [
@@ -192,58 +191,64 @@ export const GIHUBARRAY = [
 export const SKILLSARRAY = [
   {
     title: "NextJS",
-    description: "Last worked recently",
-    level: "Intermediate",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
+  },
+  {
+    title: "Remix.run",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
   },
   {
     title: "React JS",
-    description: "Last worked Daily",
-    level: "More Than Intermediate",
+    enagagementLevel: "DAILY",
+    level: "INTERMIDIATE +",
   },
   {
-    title: "SCSS",
-    description: "Last worked Daily",
-    level: "Intermediate",
+    title: "CSS / SCSS / Tailwind",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
+  },
+  {
+    title: "Capacitor js",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
   },
   {
     title: "Graphql",
-    description: "Last worked recently in Xcelpros",
+    enagagementLevel: "OCCASIONALY",
     level: "Beginner",
   },
   {
     title: "Typescript",
-    description: "Last worked recently in Xcelpros",
-    level: "Intermediate",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
   },
   {
     title: "Web Sockets",
-    description: "Last worked recently in Xcelpros and in MERN Project.",
-    level: "More than beginner",
+    enagagementLevel: "OCCASIONALY",
+    level: "BEGINNER +",
   },
   {
     title: "Node Js",
-    description: "Last worked in nov 2021 for backend using express.",
+    enagagementLevel: "LONG TIME AGO",
     level: "Beginner",
   },
   {
     title: "Python",
-    description: "Last worked in nov 2021",
-    level: "Beginner",
+    enagagementLevel: "LONG TIME AGO",
+    level: "INTERMEDIATE",
   },
   {
     title: "HTML",
-    description: "Last worked daily",
-    level: "No -level",
+    enagagementLevel: "DAILY",
+    level: "INTERMIDIATE +",
   },
-  {
-    title: "CSS",
-    description: "Last worked daily",
-    level: "Intermediate",
-  },
+
   {
     title: "JS",
-    description: "Last worked daily",
-    level: "Intermediate",
+    enagagementLevel: "DAILY",
+    level: "INTERMEDIATE",
   },
 ];
 
