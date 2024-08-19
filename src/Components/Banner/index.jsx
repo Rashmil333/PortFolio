@@ -1,5 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
-import { robotSoon, simplySidebarsCover, sunflower } from "../../constant";
+import { useMemo, useState } from "react";
+import {
+  robotSoon,
+  simplySidebarsCover,
+  emojisSay,
+  sunflower,
+} from "../../constant";
 import { randomArrayElement, randomIntFromInterval } from "../../helpers";
 import styles from "./banner.module.scss";
 
@@ -52,43 +57,7 @@ const Hello = () => {
     </>
   );
 };
-const TimeRemaining = () => {
-  const d = new Date();
-  const [currTime, setCurrTime] = useState(d);
 
-  useEffect(() => {
-    let setInterval_ = setInterval(() => {
-      const d = new Date();
-      setCurrTime(d);
-    }, 1000);
-    return () => clearInterval(setInterval_);
-  });
-
-  const getHoursHandler = useCallback(() => {
-    const ampmtime = currTime.toLocaleString("en-US", {
-      hour: "numeric",
-      hour12: true,
-    });
-    if (currTime.getHours() > 12) {
-      return 24 - currTime.getHours();
-    }
-    if (ampmtime.slice(ampmtime.length - 2, ampmtime.length) === "PM") {
-      return 24 - currTime.getHours() + 12;
-    }
-    return currTime.getHours();
-  }, [currTime]);
-
-  return (
-    <p className={styles.remainingTime}>
-      <span className={styles.timeBig}>{27 - currTime.getDate()}</span>days
-      &nbsp;
-      <span className={styles.timeBig}>{getHoursHandler()}</span>h &nbsp;
-      <span className={styles.timeBig}>{60 - currTime.getMinutes()}</span>
-      min&nbsp;
-      <span className={styles.timeBig}>{60 - currTime.getSeconds()}</span>sec
-    </p>
-  );
-};
 const Banner = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -102,22 +71,25 @@ const Banner = () => {
           </p>
         </div> */}
         {/* <div className={styles.banner_card}>
-          <img src={sunflower} className={styles.poster} alt="" />
+          <img src={emojisSay} className={styles.poster} alt="" />
           <div className={styles.textSec}>
-            <p className={styles.title}>Sunflower</p>
+            <p className={styles.title}>Pixelated Puzzle</p>
             <button
               className={styles.watchbtn}
               onPointerOver={() => setHovered(true)}
               onPointerOut={() => setHovered(false)}
               onClick={() =>
-                window.open("https://new-projects-pen.web.app/morph", "__blank")
+                window.open(
+                  "https://new-projects-pen.web.app/emojis-say",
+                  "__blank"
+                )
               }
             >
               Watch Pen
             </button>
           </div>
         </div> */}
-        <div className={`${styles.banner_card} ${styles.mt}`}>
+        {/* <div className={`${styles.banner_card} ${styles.mt}`}>
           <img src={simplySidebarsCover} className={styles.poster} alt="" />
           <div className={styles.textSec}>
             <p className={styles.title}>Simply Sidebars.</p>
@@ -135,12 +107,51 @@ const Banner = () => {
               Visit
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={styles.bannerHeader}>
           <p className={styles.heading}>
             <span>L</span>atest
           </p>
         </div>
+        <div className={styles.banner_card}>
+          <img src={emojisSay} className={styles.poster} alt="" />
+          <div className={styles.textSec}>
+            <p className={styles.title}>Pixelated Puzzle</p>
+            <button
+              className={styles.watchbtn}
+              onPointerOver={() => setHovered(true)}
+              onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open(
+                  "https://new-projects-pen.web.app/emojis-say",
+                  "__blank"
+                )
+              }
+            >
+              Watch Pen
+            </button>
+          </div>
+        </div>
+        <div className={styles.banner_card}>
+          <div className={styles.textSec}>
+            <p className={styles.title}>Simply Sidebars</p>
+            <button
+              className={styles.watchbtn}
+              onPointerOver={() => setHovered(true)}
+              onPointerOut={() => setHovered(false)}
+              onClick={() =>
+                window.open(
+                  "https://new-projects-pen.web.app/simply-sidebars",
+                  "__blank"
+                )
+              }
+            >
+              Watch Pen
+            </button>
+          </div>
+          <img src={simplySidebarsCover} className={styles.poster} alt="" />
+        </div>
+
         <div className={styles.banner_card}>
           <img src={sunflower} className={styles.poster} alt="" />
           <div className={styles.textSec}>
@@ -156,24 +167,6 @@ const Banner = () => {
               Watch Pen
             </button>
           </div>
-        </div>
-        <div className={styles.banner_card}>
-          <div className={styles.textSec}>
-            <p className={styles.title}>
-              A peculiar robot’s patience being tested.
-            </p>
-            <button
-              className={styles.watchbtn}
-              onPointerOver={() => setHovered(true)}
-              onPointerOut={() => setHovered(false)}
-              onClick={() =>
-                window.open("https://new-projects-pen.web.app/stack", "__blank")
-              }
-            >
-              Watch Pen
-            </button>
-          </div>
-          <img src={robotSoon} className={styles.poster} alt="" />
         </div>
       </div>
     </div>

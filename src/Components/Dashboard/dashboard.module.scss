@@ -1,60 +1,60 @@
-@import '../../variable.scss';
+@import "../../variable.scss";
 .dashboardContent {
-    min-height: 30rem;
-    padding-left: 3rem;
-    padding-right: 10%;
-    margin-bottom: 10rem;
-    @media screen and (max-width:1300px) {
-        padding-right: 3%;
-    }
-    @media screen and (max-width:1019px) {
-        padding-left: 2rem;
-    }
-    @media screen and (max-width:767px) {
-        padding-left: 1rem;
-    }
-    .leftSection {
-        max-width: 5.125rem;
-        margin-top: 5.125rem;
-        position: fixed;
-        &.projects {
-            @media screen and (max-width:480px) {
-                left: 0;
-            }
+  min-height: 30rem;
+  padding-left: 3rem;
+  padding-right: 10%;
+  margin-bottom: 10rem;
+  @media screen and (max-width: 1300px) {
+    padding-right: 3%;
+  }
+  @media screen and (max-width: 1019px) {
+    padding-left: 2rem;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 1rem;
+  }
+  .leftSection {
+    max-width: 5.125rem;
+    margin-top: 5.125rem;
+    position: fixed;
+    &.projects {
+      @media screen and (max-width: 480px) {
+        left: 0;
+      }
 
-            .category {
-                display: block;
-            }
-        }
-        @media screen and (max-width:1019px) {
-            position: absolute;
-            left: .6875rem;
-        }
-        .category {
-            @extend %largeboldText;
-            transform: rotateZ(90deg);
-            @media screen and (max-width:480px) {
-                display: none;
-            }
-            @media screen and (max-width:1019px) {
-                font-size: 2.1875rem;
-                letter-spacing: -0.125rem;
-            }
-        }
+      .category {
+        display: block;
+      }
     }
-    .bottomNote {
-        position: fixed;
-        bottom: 10rem;
-        max-width: 9.6875rem;
-        font-family: $font-gothic;
-        @media screen and (max-width:1019px) {
-            position: absolute;
-            top: 10rem;
-            left: 7rem;
-        }
-        // @media screen and (max-width:480px) {
-        //     top: 9rem;
-        //     left: 1rem;
-        // }
+    @media screen and (max-width: 1019px) {
+      position: absolute;
+      left: 0.6875rem;
     }
+    .category {
+      @extend %largeboldText;
+      transform: rotateZ(90deg);
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      @media screen and (max-width: 1019px) {
+        font-size: 2.1875rem;
+        letter-spacing: -0.125rem;
+      }
+    }
+  }
+  .bottomNote {
+    position: fixed;
+    bottom: 10rem;
+    max-width: 9.6875rem;
+    font-family: $font-gothic;
+    @media screen and (max-width: 1019px) {
+      position: absolute;
+      top: 10rem;
+      left: 7rem;
+    }
+    // @media screen and (max-width:480px) {
+    //     top: 9rem;
+    //     left: 1rem;
+    // }
+  }
 }

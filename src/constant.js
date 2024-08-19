@@ -30,6 +30,8 @@ import circularloopSoon from "./static/waveloop.png";
 import sunflower from "./static/sunflower.png";
 import sunflowerCover from "./static/sunflowerCover.png";
 import simplySidebarsCover from "./static/simply-sidebarsCover.png";
+import emojisSay from "./static/emojis-say.png";
+import emojisSayCover from "./static/emojis-say-cover-2.png";
 
 import stackCover from "./static/stackCover.png";
 import circularLoopCover from "./static/circularLoopCover.png";
@@ -63,6 +65,8 @@ export {
   sunflowerCover,
   stackCover,
   simplySidebarsCover,
+  emojisSay,
+  emojisSayCover,
 };
 
 export const Links = [
@@ -253,11 +257,17 @@ export const SKILLSARRAY = [
 ];
 
 export const STATICLINKS = {
-  coverlink: "https://new-projects-pen.web.app/simply-sidebars",
+  coverlink: "https://new-projects-pen.web.app/emojis-say",
   github: "https://github.com/Rashmil333?tab=repositories",
 };
 
 export const CODEPENARRAY = [
+  {
+    title: "Pixelated puzzle",
+    description: "",
+    link: "https://new-projects-pen.web.app/emojis-say",
+    img: emojisSayCover,
+  },
   {
     title: "Simply-Sidebars",
     description:

@@ -3,7 +3,7 @@ import Image from "../../Components/Image";
 import {
   CATEGORIES,
   EDUCATIONARRAY,
-  simplySidebarsCover,
+  emojisSayCover,
   STATICLINKS,
 } from "../../constant";
 import { openNewWindow } from "../../helpers";
@@ -19,11 +19,9 @@ const EducationDashboard = () => {
               className={styles.coverTopSection}
               onClick={() => openNewWindow(STATICLINKS.coverlink)}
             >
-              <Image src={simplySidebarsCover} className={styles.cover} />
+              <Image src={emojisSayCover} className={styles.cover} />
               <p className={styles.coverhint}>Recently made this.</p>
-              <p className={styles.coverTitle}>
-                Easeee way to get sidebars into your projects!
-              </p>
+              <p className={styles.coverTitle}>Pixelated Puzzle</p>
             </div>
 
             <p className={styles.heading}>SKILLS</p>

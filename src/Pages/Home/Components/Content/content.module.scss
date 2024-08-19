@@ -34,23 +34,53 @@
       color: white;
       max-height: 60%;
       left: 0;
+      top: 0;
       z-index: 1;
       overflow: hidden;
-      animation-name: glitterAfter;
+      animation-name: glitterAftermake;
       animation-duration: 1s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      text-shadow: 4px 0 green;
-      filter: blur(1px);
+      text-shadow: 4px 0 rgb(88, 153, 88);
 
-      @keyframes glitterAfter {
+      @keyframes glitterAftermake {
         0% {
           max-height: 0px;
-          transform: translateX(0px);
+          transform: translateX(2px);
+        }
+        30% {
+          max-height: 80%;
+          transform: translateX(-3px);
+        }
+        65% {
+          max-height: 0px;
+          transform: translateX(10px);
         }
         100% {
           max-height: 0px;
-          transform: translateX(-2px);
+          transform: translateX(2px);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        text-shadow: 1px 0 rgb(88, 153, 88);
+
+        @keyframes glitterAftermake {
+          0% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
+          30% {
+            max-height: 80%;
+            transform: translateX(-2px);
+          }
+          65% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
+          100% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
         }
       }
     }
@@ -59,23 +89,47 @@
       position: absolute;
       max-height: 60%;
       z-index: -1;
+      left: 0;
+      top: 0;
       overflow: hidden;
-      animation-name: glitter;
+      animation-name: glitterMakeBefore;
       animation-duration: 0.8s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-out;
       animation-direction: alternate-reverse;
-      text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
-      filter: blur(1px);
+      text-shadow: 4px 0 rgba(255, 0, 0, 0.3);
 
-      @keyframes glitter {
+      @keyframes glitterMakeBefore {
         0% {
           max-height: 0px;
           transform: translateX(0);
         }
         100% {
           max-height: 60%;
-          transform: translateX(2px);
+          transform: translateX(3px);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        text-shadow: 1px 0 rgba(255, 0, 0, 0.3);
+
+        @keyframes glitterMakeBefore {
+          0% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
+          30% {
+            max-height: 80%;
+            transform: translateX(-2px);
+          }
+          65% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
+          100% {
+            max-height: 0px;
+            transform: translateX(2px);
+          }
         }
       }
     }
@@ -111,6 +165,7 @@
       color: white;
       max-height: 60%;
       left: 0;
+      top: 0;
       z-index: 1;
       overflow: hidden;
       animation-name: glitterAfter;
@@ -118,7 +173,9 @@
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
       text-shadow: 4px 0 rgb(88, 153, 88);
-      filter: blur(1px);
+      @media screen and (max-width: 768px) {
+        text-shadow: 1px 0 rgb(88, 153, 88);
+      }
 
       @keyframes glitterAfter {
         0% {
@@ -133,7 +190,6 @@
           max-height: 0px;
           transform: translateX(10px);
         }
-
         100% {
           max-height: 0px;
           transform: translateX(2px);
@@ -144,15 +200,21 @@
       content: "I BREAK THINGS";
       position: absolute;
       max-height: 60%;
-      z-index: -1;
+      z-index: 1;
       overflow: hidden;
+      left: 0;
+      top: 0;
       animation-name: glitter;
       animation-duration: 0.8s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-out;
       animation-direction: alternate-reverse;
       text-shadow: 4px 0 rgba(255, 0, 0, 0.3);
+      @media screen and (max-width: 768px) {
+        text-shadow: 1px 0 rgba(255, 0, 0, 0.3);
 
+        filter: blur(0px);
+      }
       @keyframes glitter {
         0% {
           max-height: 0px;
@@ -160,7 +222,7 @@
         }
         100% {
           max-height: 60%;
-          transform: translateX(1px);
+          transform: translateX(3px);
         }
       }
     }

@@ -88,12 +88,13 @@ export const Flowers = ({ hovered }) => {
 
 const Content = () => {
   const [hovered, setHovered] = useState(false);
-
+  const isSmallscreen = window.screen.width < 1020;
   return (
     <div className={styles.contentWrapper}>
       <div
-        onPointerOut={() => setHovered(false)}
-        onPointerOver={() => setHovered(true)}
+        onPointerOut={() => !isSmallscreen && setHovered(false)}
+        onPointerOver={() => !isSmallscreen && setHovered(true)}
+        onClick={() => isSmallscreen && setHovered(!hovered)}
       >
         {!hovered ? (
           <p className={styles.canvas_headingMake}>I {"MAKE"} THINGS</p>
